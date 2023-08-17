@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @andysama97
-- 👀 I’m interested in self-discipline for now
+- 👀 I’m interested to be self-taught programmer
 - 🌱 I’m currently learning c++
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
