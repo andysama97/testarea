@@ -1,25 +1,20 @@
 #include <iostream>
 using namespace std;
 
-float inputL() {
-    float x;
+struct beam {
+    float lenght, width, height;
+};
+
+beam specify() {
+    beam data;
     cout << "Enter beam's length = ";
-    cin >> x;
-    return x;
-}
-
-float inputW() {
-    float x;
+    cin >> data.lenght;
     cout << "Enter beam's width = ";
-    cin >> x;
-    return x;
-}
-
-float inputH() {
-    float x;
+    cin >> data.width;
     cout << "Enter beam's height = ";
-    cin >> x;
-    return x;
+    cin >> data.height;
+
+    return data;
 }
 
 float volume(float l, float w, float h) {
@@ -34,8 +29,9 @@ void result(float l, float w, float h, float v) {
 }
 
 int main() {
-    float l = inputL(), w = inputW(), h = inputH(), v = volume(l, w, h);
-    result(l,w,h,v);
+    beam data = specify();
+    float v = volume(data.lenght, data.width, data.height);
+    result(data.lenght, data.width, data.height, v);
 
     return 0;
 }
